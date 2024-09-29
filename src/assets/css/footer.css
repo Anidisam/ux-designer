@@ -1,0 +1,49 @@
+.footer {
+  background-color: black;
+
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.container .navbar-brand{
+    color: red;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+
+.nav-item .nav-link {
+    color: white;
+}
+.nav-link {
+  color: #000;
+}
+
+.social-icons i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.social-icons a {
+  text-decoration: none;
+}
+
+.footer-bottom {
+  padding: 10px 0;
+  font-size: 14px;
+  color: white;
+}
+
+.footer-bottom a {
+  margin: 0 5px;
+  color: white;
+  text-decoration: none;
+}

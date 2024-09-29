@@ -1,0 +1,42 @@
+.custom-section {
+  background-color: #FFF1E8;
+  padding: 50px 0;
+}
+
+.first-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-text a h1 {
+    text-decoration: underline;
+    color: #000;
+    padding-left: 19rem;
+}
+
+.first-text .text-btn {
+    background-color:#c6f01e;
+    border-radius: 11px;
+    margin-right: 19rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    cursor: pointer;
+}
+
+.text-btn:hover{
+    background-color: #fff;
+    transition: 0.5s ease;
+}
+
+.lorem-text {
+  font-size: 14px;
+  color: #333;
+}
+
+.card {
+  border: 1px solid #ddd;
+}
+
+.move-down {
+  margin-top: 20px; 
+}

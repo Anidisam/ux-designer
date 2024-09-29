@@ -1,0 +1,44 @@
+.prototype {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    margin: 5rem 10rem;
+}
+.prototype-content{
+    background-color: #000;
+    padding: 40px 25px;
+}
+
+.prototype-content h2 {
+    color: #fff;
+}
+
+.prototype-content {
+    text-align: center;
+    justify-content: center;
+}
+
+.work-btn{
+    background-color: #c6f01e;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.content2 h3{
+text-decoration: underline;
+}
+
+.workof-art {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 5rem;
+}
+
+.workof-art h3 {
+    color: gray;
+}
+
+.wise-image h3 {
+    color: gray;
+}

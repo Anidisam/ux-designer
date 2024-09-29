@@ -1,0 +1,33 @@
+.ideas h3 {
+  text-decoration: underline;
+}
+
+.ideas {
+  display: flex;
+  margin-left: 15rem;
+  margin-top: 10rem;
+}
+
+.ideas p {
+  margin-left: 31rem;
+}
+
+.icon {
+  display: flex;
+  margin-left: 15rem;
+  margin-bottom: 8rem;
+}
+
+.icon2 {
+  display: flex;
+  margin-left: 15rem;
+  margin-bottom: 10rem;
+}
+
+.icon .image-icon2 {
+  margin-left: 30rem;
+}
+
+.icon2 .image-icon3 {
+  margin-left: 30rem;
+}
