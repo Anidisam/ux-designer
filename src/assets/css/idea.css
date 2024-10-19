@@ -1,33 +1,53 @@
 .ideas h3 {
   text-decoration: underline;
+  margin-bottom: 1rem;
 }
 
-.ideas {
-  display: flex;
-  margin-left: 15rem;
-  margin-top: 10rem;
+.content-image h2 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
-.ideas p {
-  margin-left: 31rem;
+.content-image p {
+  color: gray;
 }
 
-.icon {
-  display: flex;
-  margin-left: 15rem;
-  margin-bottom: 8rem;
+/* Ensure images scale down properly */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
-.icon2 {
-  display: flex;
-  margin-left: 15rem;
-  margin-bottom: 10rem;
+/* Add space at the top of the section */
+.idea {
+  margin-top: 5rem;
 }
 
-.icon .image-icon2 {
-  margin-left: 30rem;
+/* Adjust padding for mobile screens */
+@media (max-width: 768px) {
+  .idea {
+    margin-top: 3rem;
+  }
+  
+  .content-image h2 {
+    font-size: 1.2rem;
+  }
+
+  .content-image p {
+    font-size: 0.9rem;
+  }
 }
 
-.icon2 .image-icon3 {
-  margin-left: 30rem;
+@media (max-width: 576px) {
+  .idea {
+    margin-top: 2rem;
+  }
+  
+  .content-image h2 {
+    font-size: 1rem;
+  }
+
+  .content-image p {
+    font-size: 0.8rem;
+  }
 }

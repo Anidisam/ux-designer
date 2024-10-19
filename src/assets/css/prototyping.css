@@ -1,18 +1,6 @@
-/* Flexbox layout for desktop */
-.prototype {
-  display: flex;
-  justify-content: center;
-  gap: 10rem;
-  margin: 5rem 10rem;
-}
-
 .prototype-content {
   background-color: #000;
   padding: 40px 25px;
-  text-align: center;
-}
-
-.prototype-content h2 {
   color: #fff;
 }
 
@@ -24,53 +12,13 @@
   cursor: pointer;
 }
 
-.content2 h3 {
-  text-decoration: underline;
-  text-align: center;
-}
-
-.workof-art {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  margin-bottom: 5rem;
-  flex-wrap: wrap; /* Allow flex items to wrap on smaller screens */
-}
-
-.art-image, .wise-image {
-  flex: 1;
-  text-align: center;
-}
-
-.workof-art h3 {
+.workof-art h3, .workof-art h1 {
   color: gray;
 }
 
-.wise-image h3 {
-  color: gray;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
-  .prototype {
-    flex-direction: column;
-    margin: 2rem 5rem;
-    gap: 2rem;
-  }
-
   .prototype-content {
     padding: 20px;
-  }
-
-  .workof-art {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .art-image, .wise-image {
-    flex: 1;
-    max-width: 100%;
-    margin-bottom: 2rem;
   }
 
   .work-btn {
@@ -84,19 +32,9 @@
 }
 
 @media (max-width: 576px) {
-  .prototype {
-    margin: 1rem 2rem;
-    gap: 1rem;
-  }
-
   .work-btn {
     padding: 6px 12px;
     font-size: 12px;
-  }
-
-  .workof-art {
-    flex-direction: column;
-    gap: 1rem;
   }
 
   h2 {

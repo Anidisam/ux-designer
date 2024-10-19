@@ -1,60 +1,65 @@
-import React from 'react'
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import "../assets/css/article.css";
 import girl1 from "../assets/image/girl1.svg";
 import girl2 from "../assets/image/girl2.svg";
 import girl3 from "../assets/image/girl3.svg";
+
 const Article = () => {
   return (
-    <div>
-      <section className="latest">
-        <div className="article">
+    <section className="latest">
+      <Container>
+        <div className="article text-center mb-5">
           <a href="#">
             <h2>Latest Article</h2>
           </a>
         </div>
-        
-        <div className="overall-container">
-            <div className="imge">
-          <img src={girl1} alt="" />
-          <div className="imge-content">
-                      <i>
-            <h6>April 02 2022</h6>
-          </i>
-          <h2>
-            Build an Athletic Body <br />
-            With In Eight Weeks Time
-          </h2>
-          </div>
+
+        <Row className="overall-container">
+          <Col lg={3} sm={12} xs={12} className="mb-4">
+            <div className="imge text-center">
+              <img src={girl1} alt="" className="img-fluid" />
+              <div className="imge-content">
+                <i>
+                  <h6>April 02 2022</h6>
+                </i>
+                <h2>
+                  Build an Athletic Body <br />
+                  With In Eight Weeks Time
+                </h2>
+              </div>
             </div>
+          </Col>
 
-            <div className="imge2">
-            <img src={girl2} alt="" />
-          <i>
-            <h6>April 02 2022</h6>
-          </i>
-          <h2>
-            Build an Athletic Body <br />
-            With In Eight Weeks Time
-          </h2>  
+          <Col lg={3} sm={12} xs={12} className="mb-4">
+            <div className="imge2 text-center">
+              <img src={girl2} alt="" className="img-fluid" />
+              <i>
+                <h6>April 02 2022</h6>
+              </i>
+              <h2>
+                Build an Athletic Body <br />
+                With In Eight Weeks Time
+              </h2>
             </div>
+          </Col>
 
-        <div className="imge3">
-        <img src={girl3} alt="" />
-          <i>
-            <h6>April 02 2022</h6>
-          </i>
-          <h2>
-            Build an Athletic Body <br />
-            With In Eight Weeks Time
-          </h2>
-        </div>
-        </div>
-        
-
-        
-      </section>
-    </div>
+          <Col lg={3} sm={12} xs={12} className="mb-4">
+            <div className="imge3 text-center">
+              <img src={girl3} alt="" className="img-fluid" />
+              <i>
+                <h6>April 02 2022</h6>
+              </i>
+              <h2>
+                Build an Athletic Body <br />
+                With In Eight Weeks Time
+              </h2>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </section>
   );
-}
+};
 
-export default Article
+export default Article;

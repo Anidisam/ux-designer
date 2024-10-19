@@ -1,21 +1,60 @@
-.latest{
-    margin-top: 9rem;
+.latest {
+  margin-top: 9rem;
 }
 
-.article a{
-    text-decoration: underline;
-    color: black;
-    text-align: center;
+.article a {
+  text-decoration: underline;
+  color: black;
 }
 
-.article a h2{
-    font-size: 4rem;
-    padding-bottom: 20px;
+.article a h2 {
+  font-size: 2.5rem;
+  padding-bottom: 20px;
 }
 
 .overall-container {
-    display: flex;
-    margin-left: 23rem;
-    gap: 25px;
-    padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.imge, .imge2, .imge3 {
+  text-align: center;
+}
+
+.imge-content h2 {
+  font-size: 1.25rem;
+}
+
+.imge-content h6 {
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .article a h2 {
+    font-size: 2rem;
+  }
+
+  .imge-content h2 {
+    font-size: 1.1rem;
+  }
+
+  .imge-content h6 {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .article a h2 {
+    font-size: 1.8rem;
+  }
+
+  .imge-content h2 {
+    font-size: 1rem;
+  }
+
+  .imge-content h6 {
+    font-size: 0.8rem;
+  }
 }

@@ -1,51 +1,56 @@
 import React from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import "../assets/css/prototyping.css";
 import artImage from "../assets/image/art-history.svg";
 import wiseImage from "../assets/image/wise-compact.svg";
 
 const Prototyping = () => {
   return (
-    <div>
+    <Container>
       <section className="prototype">
-        <div className="prototype-content">
-          <h2>create beautiful layout simply</h2>
-          <button className="work-btn">see all my work</button>
-        </div>
-        <div className="content2">
-          <h3>
-            Let’s deal with the most useful design <br />
-            kits. You're free to generate ideas to make <br />
-            them alive faster than before.
-          </h3>
-        </div>
+        <Row className="text-center">
+          <Col md={6}>
+            <div className="prototype-content">
+              <h2>Create beautiful layout simply</h2>
+              <Button className="work-btn">See all my work</Button>
+            </div>
+          </Col>
+          <Col md={6} className="text-center">
+            <div className="content2">
+              <h3>
+                Let’s deal with the most useful design kits. You're free to
+                generate ideas to make them alive faster than before.
+              </h3>
+            </div>
+          </Col>
+        </Row>
       </section>
-      <div className="workof-art">
-        <div className="art-image">
-          <img src={artImage} alt="Art" />
-          <div className="design">
-            <br />
-            <h1>Design</h1>
-            <h3>
-              There are some known issues with <br />
-              variable fonts in Chrome, in particular <br />
-              on Microsoft Windows.
-            </h3>
-          </div>
-        </div>
-        <div className="wise-image">
-          <img src={wiseImage} alt="Wise"/>
-          <div className="proto">
-            <br />
-            <h1>Prototyping</h1>
-            <h3>
-              There are some known issues with <br />
-              variable fonts in Chrome, in particular <br />
-              on Microsoft Windows.
-            </h3>
-          </div>
-        </div>
-      </div>
-    </div>
+
+      <section className="workof-art mt-5">
+        <Row>
+          <Col md={6} className="text-center">
+            <img src={artImage} alt="Art" className="img-fluid" />
+            <div className="design mt-3">
+              <h1>Design</h1>
+              <h3>
+                There are some known issues with variable fonts in Chrome, in
+                particular on Microsoft Windows.
+              </h3>
+            </div>
+          </Col>
+          <Col md={6} className="text-center">
+            <img src={wiseImage} alt="Wise" className="img-fluid" />
+            <div className="proto mt-3">
+              <h1>Prototyping</h1>
+              <h3>
+                There are some known issues with variable fonts in Chrome, in
+                particular on Microsoft Windows.
+              </h3>
+            </div>
+          </Col>
+        </Row>
+      </section>
+    </Container>
   );
 };
 
