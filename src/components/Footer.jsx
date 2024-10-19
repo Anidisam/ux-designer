@@ -49,7 +49,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
+        
         <div className="footer-bottom text-center">
           <p>
             © Copyright All Rights Reserved |<a href="#"> Privacy Policy </a> |

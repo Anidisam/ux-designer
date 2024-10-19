@@ -3,15 +3,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 50px;
-  background-color: #f9f9f9; 
-}
-
-.hero {
   background-color: #fff1e8;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
 }
 
 .hero-content {
   flex: 1;
+  margin-bottom: 30px;
 }
 
 .hero-content h1 {
@@ -27,7 +25,7 @@
   max-width: 500px;
 }
 
-.hero-content .join-btn {
+.join-btn {
   background-color: #c6f01e;
   color: #fff;
   padding: 10px 25px;
@@ -36,7 +34,7 @@
   font-size: 18px;
 }
 
-.hero-content .join-btn:hover {
+.join-btn:hover {
   background-color: #333;
 }
 
@@ -49,4 +47,40 @@
 .hero-image img {
   max-width: 100%;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 20px;
+    flex-direction: column; /* Stack content vertically */
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    max-width: 100%; /* Full width for smaller screens */
+  }
+
+  .join-btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .join-btn {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
 }

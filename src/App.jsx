@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Prototyping from "./components/Prototyping";

@@ -1,18 +1,63 @@
-.start{
-    background-color: #CAEF46;  
-    display: flex;
-    /* margin-bottom: 15rem; */
+.start {
+  background-color: #caef46;  
+  display: flex;
+  padding-top: 5rem ; /* Add padding to the section */
+  padding-bottom: 1px;
+  padding-right: 5rem;
+  gap: 2rem; /* Add some gap between the elements */
+  
 }
 
-.development{
-margin-left: 10rem;
-padding: 5rem 5rem;
+.development {
+  margin-left: 2rem; /* Reduced margin for better spacing */
+  padding: 2rem; /* Reduced padding for better spacing */
+  flex: 1; /* Allow this div to take available space */
 }
 
-.side-image{
-    margin-left: 16rem;
+.side-image {
+  flex: 1; /* Allow this div to take available space */
+  display: flex;
+  justify-content: center; /* Center the image */
+  align-items: center; /* Center the image vertically */
+  margin-right: -5rem;
 }
 
 .development a {
-    color: black;
+  color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .start {
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center; /* Center the items */
+  }
+
+  .development {
+    margin-left: 0; /* Remove left margin on smaller screens */
+    text-align: center; /* Center the text */
+  }
+
+  .side-image {
+    margin-top: 2rem; /* Add space above the image */
+  }
+
+  .side-image img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 576px) {
+  .development h1 {
+    font-size: 24px; /* Reduce the font size for smaller screens */
+  }
+
+  .development h3 {
+    font-size: 16px; /* Adjust h3 font size */
+  }
+
+  .development a h2 {
+    font-size: 18px; /* Adjust h2 font size */
+  }
 }
