@@ -16,7 +16,7 @@ const Hero = () => {
           resources, and community to help you grow your career <br />
           and your bank account
         </p>
-        <button className="join-btn">Join for Free</button>
+        <button className="join-bt">Join for Free</button>
       </div>
       <div className="hero-image">
         <img src={heroImage} alt="Hero" />

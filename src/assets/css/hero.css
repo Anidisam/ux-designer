@@ -25,17 +25,18 @@
   max-width: 500px;
 }
 
-.join-btn {
+.join-bt {
   background-color: #c6f01e;
-  color: #fff;
+  color: #000;
   padding: 10px 25px;
   border: none;
   cursor: pointer;
   font-size: 18px;
+  border-radius: 9px;
 }
 
-.join-btn:hover {
-  background-color: #333;
+.join-bt:hover {
+  background-color: #fff;
 }
 
 .hero-image {

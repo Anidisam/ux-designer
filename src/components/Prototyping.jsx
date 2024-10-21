@@ -32,20 +32,20 @@ const Prototyping = () => {
             <img src={artImage} alt="Art" className="img-fluid" />
             <div className="design mt-3">
               <h1>Design</h1>
-              <h3>
+              <h5>
                 There are some known issues with variable fonts in Chrome, in
                 particular on Microsoft Windows.
-              </h3>
+              </h5>
             </div>
           </Col>
           <Col md={6} className="text-center">
             <img src={wiseImage} alt="Wise" className="img-fluid" />
             <div className="proto mt-3">
               <h1>Prototyping</h1>
-              <h3>
+              <h5>
                 There are some known issues with variable fonts in Chrome, in
                 particular on Microsoft Windows.
-              </h3>
+              </h5>
             </div>
           </Col>
         </Row>

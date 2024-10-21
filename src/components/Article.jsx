@@ -34,26 +34,30 @@ const Article = () => {
           <Col lg={3} sm={12} xs={12} className="mb-4">
             <div className="imge2 text-center">
               <img src={girl2} alt="" className="img-fluid" />
-              <i>
-                <h6>April 02 2022</h6>
-              </i>
-              <h2>
-                Build an Athletic Body <br />
-                With In Eight Weeks Time
-              </h2>
+              <div className="imge-content">
+                <i>
+                  <h6>April 02 2022</h6>
+                </i>
+                <h2>
+                  Build an Athletic Body <br />
+                  With In Eight Weeks Time
+                </h2>
+              </div>
             </div>
           </Col>
 
           <Col lg={3} sm={12} xs={12} className="mb-4">
             <div className="imge3 text-center">
               <img src={girl3} alt="" className="img-fluid" />
-              <i>
-                <h6>April 02 2022</h6>
-              </i>
-              <h2>
-                Build an Athletic Body <br />
-                With In Eight Weeks Time
-              </h2>
+              <div className="imge-content">
+                <i>
+                  <h6>April 02 2022</h6>
+                </i>
+                <h2>
+                  Build an Athletic Body <br />
+                  With In Eight Weeks Time
+                </h2>
+              </div>
             </div>
           </Col>
         </Row>
