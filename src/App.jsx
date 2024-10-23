@@ -1,5 +1,4 @@
-import { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Prototyping from "./components/Prototyping";
@@ -8,11 +7,11 @@ import Idea from "./components/Idea";
 import Friends from "./components/Friends";
 import Article from "./components/Article";
 import Footer from "./components/Footer";
+import About from "./components/About"; // Your About component
 
-function App() {
+function Home() {
   return (
     <>
-      <Navbar />
       <Hero />
       <Prototyping />
       <Teaching />
@@ -21,6 +20,18 @@ function App() {
       <Article />
       <Footer />
     </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} /> {/* Home route */}
+        <Route path="/about" element={<About />} /> {/* About page route */}
+      </Routes>
+    </Router>
   );
 }
 

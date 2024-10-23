@@ -1,0 +1,85 @@
+.about-us {
+  padding-top: 30px;
+  background-color: #f9f9f9;
+}
+
+.about-us .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.about-us h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-item {
+  background: gray;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.8em;
+}
+
+.about-item p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+
+.our-roles {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+.our-roles .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.our-roles h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.roles-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.role-item {
+  display: flex;
+  align-items: center; /* Aligns the avatar and text vertically */
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.role-item .avatar {
+  width: 60px; /* Set a fixed width for avatars */
+  height: 60px; /* Set a fixed height for avatars */
+  border-radius: 50%; /* Makes the avatar circular */
+  margin-right: 20px; /* Space between avatar and text */
+}
+
+.roles-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
