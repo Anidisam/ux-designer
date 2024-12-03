@@ -20,7 +20,7 @@ const Navbar = () => {
           <Link to="/about">About</Link> {/* About link */}
         </li>
         <li>
-          <a href="#pricing">Pricing</a>
+          <Link to="/pricing">Pricing</Link> {/* Pricing link */}
         </li>
         <li>
           <a href="#blog">Blog</a>
@@ -29,7 +29,10 @@ const Navbar = () => {
           <a href="#content">Content</a>
         </li>
       </ul>
-      <button className="join-btn">Join Now</button>
+      {/* Updated Join Now button */}
+      <Link to="/auth">
+        <button className="join-btn">Join Now</button>
+      </Link>
       <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
         ☰
       </div>
