@@ -5,7 +5,7 @@ import Prototyping from "./components/Prototyping";
 import Teaching from "./components/Teaching";
 import Idea from "./components/Idea";
 import Friends from "./components/Friends";
-import Article from "./components/Article";
+import LatestArticles from "./components/LatestArticles";
 import Footer from "./components/Footer";
 import About from "./components/About"; // Your About component
 import Pricing from "./components/Pricing";
@@ -13,6 +13,7 @@ import Authentication from "./components/Authentication";
 import Signin from "./components/Signin";
 import SignUp from "./components/SignUp";
 import CreateAccount from "./components/CreateAccount";
+import ArticleDetail from "./components/ArticleDetail";
 
 function Home() {
   return (
@@ -22,9 +23,8 @@ function Home() {
       <Teaching />
       <Idea />
       <Friends />
-      <Article />
+      <LatestArticles />
       <Footer />
-      {/* <Pricing /> */}
     </>
   );
 }
@@ -41,12 +41,33 @@ function App() {
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/create-account" element={<CreateAccount />} />
+        <Route path="/article-detail/:id" element={<ArticleDetail />} />{" "}
+        {/* Dynamic Article Detail */}
       </Routes>
     </Router>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
