@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Button, Row, Col, Container } from "react-bootstrap";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import imma1 from "../assets/image/girl1.svg";
 import imma2 from "../assets/image/girl2.svg";
 import imma3 from "../assets/image/girl3.svg";
@@ -74,13 +75,10 @@ const LatestArticles = () => {
                     </span>
                   ))}
                 </div>
-                <a
-                  href={article.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                {/* Use Link instead of <a> */}
+                <Link to={article.link}>
                   <Button variant="primary">Read More</Button>
-                </a>
+                </Link>
               </Card.Body>
             </Card>
           </Col>
