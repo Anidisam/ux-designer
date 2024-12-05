@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Button, Row, Col, Container } from "react-bootstrap";
+import { Link } from "react-router-dom"; // Import Link for internal navigation
 import imma1 from "../assets/image/girl1.svg";
 import imma2 from "../assets/image/girl2.svg";
 import imma3 from "../assets/image/girl3.svg";
@@ -78,13 +79,10 @@ const Blog = () => {
                       </span>
                     ))}
                   </div>
-                  <a
-                    href={article.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  {/* Replace <a> with <Link> */}
+                  <Link to={article.link}>
                     <Button variant="primary">Read More</Button>
-                  </a>
+                  </Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -101,10 +99,10 @@ const Blog = () => {
                 height="315"
                 src="https://www.youtube.com/embed/55NvZjUZIO8?si=jKGraaknylrDHhbT"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
               ></iframe>
             </Col>
             <Col md={4} sm={12} className="mb-4">
@@ -113,10 +111,10 @@ const Blog = () => {
                 height="315"
                 src="https://www.youtube.com/embed/TIZ2u8BcSUA?si=ulP_t04OUHRh827g"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
               ></iframe>
             </Col>
             <Col md={4} sm={12} className="mb-4">
@@ -125,10 +123,10 @@ const Blog = () => {
                 height="315"
                 src="https://www.youtube.com/embed/195RY7jCuZg?si=oXRB2uGGFMQ9lZrp"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
               ></iframe>
             </Col>
           </Row>
