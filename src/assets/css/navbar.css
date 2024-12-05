@@ -28,21 +28,20 @@
 }
 
 .join-btn {
-  background-color: #c6f01e; 
-  color: #000; 
+  background-color: #c6f01e;
+  color: #000;
   padding: 10px 20px;
-  border: 2px solid black; 
+  border: 2px solid black;
   cursor: pointer;
   font-size: 16px;
   border-radius: 15px;
 }
 
 .join-btn:hover {
-  background-color: #fff; 
-  color: black; 
+  background-color: #fff;
+  color: black;
   transition: 0.9s ease;
 }
-
 
 /* Mobile menu icon */
 .mobile-menu-icon {
@@ -61,11 +60,23 @@
   background-color: #c6f01e;
   width: 100%;
   padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links.mobile-menu-open li {
   padding: 10px 0;
   text-align: center;
+}
+
+/* Join Now button for mobile menu */
+.nav-links.mobile-menu-open .mobile-join-btn {
+  margin-top: 10px;
+}
+
+.nav-links.mobile-menu-open .mobile-join-btn .join-btn {
+  display: inline-block;
+  width: 80%; /* Make the button responsive */
+  margin: 0 auto; /* Center the button */
 }
 
 /* Responsive Design */
@@ -80,7 +91,7 @@
   }
 
   .join-btn {
-    display: none;
+    display: none; /* Hide the desktop Join Now button */
   }
 }
 

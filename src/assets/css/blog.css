@@ -1,0 +1,152 @@
+/* General Styles */
+.blog-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.tweets-section .tweet {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tweets-section .tweet p {
+  margin: 0 0 10px;
+}
+
+.tweet-actions button {
+  background-color: #c6f01e;
+  border: none;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.tweet-actions button:hover {
+  background-color: #b2d018;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Blog Cards */
+  .blog-card {
+    margin-bottom: 20px;
+  }
+
+  .blog-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .tweet-actions button {
+    font-size: 0.8rem;
+  }
+
+  /* Tweets Section */
+  .tweets-section .tweet {
+    padding: 10px;
+  }
+
+  /* YouTube Video */
+  .tweets-section iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  /* Make the tweets section and article layout stack vertically */
+  .tweets-section {
+    padding: 20px;
+  }
+
+  .blog-card, .tweets-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Text Center Alignment */
+  .blog-card .card-body {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust for smaller screens */
+  .tweet-actions button {
+    font-size: 0.7rem;
+  }
+
+  .blog-card .card-body {
+    padding: 10px;
+  }
+
+  .tweets-section .tweet p {
+    font-size: 0.9rem;
+  }
+
+  /* Adjust image sizes in the blog cards for small devices */
+  .blog-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Make embedded videos take full width */
+  .tweets-section iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  /* Adjust card text and layout for mobile */
+  .blog-card .card-title {
+    font-size: 1rem;
+  }
+
+  .blog-card .card-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tweet-actions button {
+    font-size: 0.6rem;
+    padding: 3px 8px;
+  }
+
+  /* Make the blog content more compact on smaller mobile screens */
+  .blog-card .card-body {
+    padding: 8px;
+  }
+
+  .tweets-section .tweet p {
+    font-size: 0.8rem;
+  }
+
+  .blog-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust the margin for small devices */
+  .blog-card {
+    margin-bottom: 15px;
+  }
+
+  /* Ensure better spacing for small screens */
+  .tweets-section {
+    padding: 10px;
+  }
+
+  /* Center the content in smaller screens */
+  .blog-card, .tweets-section {
+    width: 100%;
+    text-align: center;
+  }
+}

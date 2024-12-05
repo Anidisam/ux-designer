@@ -7,13 +7,14 @@ import Idea from "./components/Idea";
 import Friends from "./components/Friends";
 import LatestArticles from "./components/LatestArticles";
 import Footer from "./components/Footer";
-import About from "./components/About"; // Your About component
+import About from "./components/About"; 
 import Pricing from "./components/Pricing";
 import Authentication from "./components/Authentication";
 import Signin from "./components/Signin";
 import SignUp from "./components/SignUp";
-import CreateAccount from "./components/CreateAccount";
+// import CreateAccount from "./components/CreateAccount";
 import ArticleDetail from "./components/ArticleDetail";
+import Blog from "./components/Blog";
 
 function Home() {
   return (
@@ -34,15 +35,15 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} /> {/* Home route */}
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/auth" element={<Authentication />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/create-account" element={<CreateAccount />} />
+        {/* <Route path="/create-account" element={<CreateAccount />} /> */}
         <Route path="/article-detail/:id" element={<ArticleDetail />} />{" "}
-        {/* Dynamic Article Detail */}
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </Router>
   );

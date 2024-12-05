@@ -15,7 +15,7 @@ const Authentication = () => {
           <button className="auth-btn">Sign Up</button>
         </Link>
         <Link to="/create-account">
-          <button className="auth-btn">Create Account</button>
+          {/* <button className="auth-btn">Create Account</button> */}
         </Link>
       </div>
     </div>

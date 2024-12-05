@@ -1,7 +1,7 @@
 .auth-container {
   text-align: center;
   padding: 50px;
-  background-color: #f8f9fa;
+  background-color: gray;
   min-height: 100vh;
 }
 
@@ -11,8 +11,8 @@
 }
 
 .auth-container p {
-  font-size: 1.2rem;
-  color: #555;
+  font-size: 2.5rem;
+  color: #fff;
 }
 
 .auth-options {
