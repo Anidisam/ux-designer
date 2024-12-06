@@ -15,6 +15,8 @@ import SignUp from "./components/SignUp";
 // import CreateAccount from "./components/CreateAccount";
 import ArticleDetail from "./components/ArticleDetail";
 import Blog from "./components/Blog";
+import Services from "./components/Services";
+import Testimonials from "./components/Testimonials";
 
 function Home() {
   return (
@@ -44,6 +46,8 @@ function App() {
         {/* <Route path="/create-account" element={<CreateAccount />} /> */}
         <Route path="/article-detail/:id" element={<ArticleDetail />} />{" "}
         <Route path="/blog" element={<Blog />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/testimonials" element={<Testimonials />} />
       </Routes>
     </Router>
   );

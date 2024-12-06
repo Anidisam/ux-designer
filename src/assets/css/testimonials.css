@@ -1,0 +1,58 @@
+.carousel-item {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.card {
+  border: none;
+  height: 100%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+  background-color: red; /* Change background color on hover */
+  transform: translateY(-10px); /* Move the card up slightly */
+  color: #fff; /* Make text white for better contrast */
+}
+
+.card-text {
+  font-style: italic;
+}
+
+.card h5,
+.card p,
+.card-text {
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.card:hover h5,
+.card:hover p,
+.card:hover .card-text {
+  color: #fff; /* Change text to white when hovered */
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #ff6f61;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #ff6f61;
+  border-radius: 50%;
+}
+
+.btn-primary {
+  background-color: #ff6f61;
+  border-color: #ff6f61;
+}
+
+.btn-primary:hover {
+  background-color: #e65b50;
+}
