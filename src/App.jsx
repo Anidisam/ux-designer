@@ -11,7 +11,7 @@ import About from "./components/About";
 import Pricing from "./components/Pricing";
 import Authentication from "./components/Authentication";
 import Signin from "./components/Signin";
-import SignUp from "./components/SignUp";
+// import SignUp from "./components/SignUp";
 // import CreateAccount from "./components/CreateAccount";
 import ArticleDetail from "./components/ArticleDetail";
 import Blog from "./components/Blog";
@@ -19,6 +19,8 @@ import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import ToolsAndResources from "./components/ToolsAndResources";
 import Contact from "./components/Contact";
+import SignForm from "./components/SignForm";
+import FreeAccess from "./components/FreeAccess";
 
 function Home() {
   return (
@@ -44,7 +46,7 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/auth" element={<Authentication />} />
         <Route path="/signin" element={<Signin />} />
-        <Route path="/signup" element={<SignUp />} />
+        {/* <Route path="/signup" element={<SignUp />} /> */}
         {/* <Route path="/create-account" element={<CreateAccount />} /> */}
         <Route path="/article-detail/:id" element={<ArticleDetail />} />{" "}
         <Route path="/blog" element={<Blog />} />
@@ -52,6 +54,8 @@ function App() {
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/resources" element={<ToolsAndResources />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/signup" element={<SignForm />} />
+        <Route path="/freeaccess" element={<FreeAccess />} />
       </Routes>
     </Router>
   );

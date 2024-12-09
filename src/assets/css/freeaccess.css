@@ -1,0 +1,115 @@
+/* General container styling */
+.freeaccess-container {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.freeaccess-container h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.freeaccess-container p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Resources section */
+.resources {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual resource box styling */
+.resource-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.resource-box:hover {
+  background-color: #ffcccc; /* Red hover color */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.resource-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.resource-box p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+/* Button styling for resource links */
+.resource-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.resource-button:hover {
+  background-color: #e94e3b; /* Darker red on hover */
+}
+
+/* Upgrade to Premium Section */
+.upgrade-container {
+  margin-top: 40px;
+}
+
+.upgrade-container p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.upgrade-button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.upgrade-button:hover {
+  background-color: #e94e3b;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resources {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resource-box {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+
+  .upgrade-button {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+}
