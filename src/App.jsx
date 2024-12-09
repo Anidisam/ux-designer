@@ -17,6 +17,8 @@ import ArticleDetail from "./components/ArticleDetail";
 import Blog from "./components/Blog";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
+import ToolsAndResources from "./components/ToolsAndResources";
+import Contact from "./components/Contact";
 
 function Home() {
   return (
@@ -48,6 +50,8 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/services" element={<Services />} />
         <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/resources" element={<ToolsAndResources />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );

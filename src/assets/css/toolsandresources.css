@@ -1,0 +1,71 @@
+/* General Styles */
+.tools-and-resources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Category Container */
+.resource-container {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.resource-container:hover {
+  background-color: #ff4a75;
+  transform: translateY(-5px);
+}
+
+/* Category Title */
+.resource-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Resource Items */
+.resource-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Link Buttons */
+.resource-button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.resource-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .tools-and-resources {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resource-container {
+    width: 90%;
+  }
+}
