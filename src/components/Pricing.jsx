@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import Footer from "./Footer";
 import "../assets/css/pricing.css";
 
 const Pricing = () => {
@@ -10,6 +11,7 @@ const Pricing = () => {
   };
 
   return (
+    <>
     <div className="pricing-section">
       <h1>Pricing</h1>
       <div className="pricing-plan">
@@ -83,6 +85,8 @@ const Pricing = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 

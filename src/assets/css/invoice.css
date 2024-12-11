@@ -1,0 +1,180 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Invoice Page Container */
+.invoice-page {
+  background-color: gray;
+  width: 80%;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.invoice-header {
+  text-align: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.invoice-header h1 {
+  font-size: 2rem;
+  color: #1c7ed6;
+  margin-bottom: 0.5rem;
+}
+
+.invoice-header p {
+  font-size: 1.1rem;
+  color: white;
+}
+
+/* Company Information */
+.company-info,
+.user-info,
+.order-summary,
+.payment-info {
+  margin-bottom: 2rem;
+}
+
+.company-info h3,
+.user-info h3,
+.order-summary h3,
+.payment-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: black;
+  font-weight: 600;
+}
+
+/* Labels */
+.company-info p,
+.user-info p,
+.order-summary p,
+.payment-info p,
+ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: black;
+}
+
+/* List items for features */
+.order-summary ul {
+  padding-left: 20px;
+}
+
+.order-summary li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1rem;
+  color: black;
+  border-top: 1px solid #eee;
+}
+
+.footer p {
+  margin-bottom: 0.5rem;
+}
+
+/* Invoice Buttons */
+.cta-button {
+  display: inline-block;
+  background-color: #1c7ed6;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #117a8b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .invoice-page {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .invoice-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .invoice-header p {
+    font-size: 1rem;
+  }
+
+  .company-info h3,
+  .user-info h3,
+  .order-summary h3,
+  .payment-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .company-info p,
+  .user-info p,
+  .order-summary p,
+  .payment-info p {
+    font-size: 1rem;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile-specific Styles */
+@media (max-width: 480px) {
+  .invoice-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .invoice-header p {
+    font-size: 0.9rem;
+  }
+
+  .company-info p,
+  .user-info p,
+  .order-summary p,
+  .payment-info p {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    padding: 0.8rem;
+    font-size: 1.1rem;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
+}

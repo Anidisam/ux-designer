@@ -1,7 +1,7 @@
 /* General Pricing Section Styles */
 .pricing-section {
-  background-color: #f4f6f9;
-  padding: 50px 20px;
+  background-color: gray;
+  padding: 60px 20px;
   text-align: center;
 }
 
@@ -11,29 +11,18 @@
   margin-bottom: 40px;
 }
 
-.pricing-section p {
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 30px;
-  line-height: 1.5;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Pricing Plans Wrapper */
-.pricing-plans {
+.pricing-plan {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
 .plan {
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  padding: 40px;
   width: 300px;
   transition: all 0.3s ease;
   text-align: center;
@@ -41,10 +30,10 @@
 
 .plan:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
-.plan h3 {
+.plan h2 {
   font-size: 2rem;
   color: #007bff;
   margin-bottom: 15px;
@@ -52,15 +41,15 @@
 
 .plan .price {
   font-size: 2.5rem;
-  color: #333;
   font-weight: bold;
+  color: #333;
   margin-bottom: 20px;
 }
 
 .plan ul {
   list-style-type: none;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .plan ul li {
@@ -69,9 +58,9 @@
   margin: 10px 0;
 }
 
-.plan .btn {
-  background-color: #007bff;
-  color: white;
+.choose-plan-button {
+  background-color: #c6f01e;
+  color: black;
   padding: 12px 25px;
   font-size: 1.1rem;
   border: none;
@@ -80,30 +69,61 @@
   transition: background-color 0.3s ease;
 }
 
-.plan .btn:hover {
+.choose-plan-button:hover {
   background-color: #0056b3;
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
-  .pricing-plans {
-    flex-direction: column;
+@media (max-width: 1024px) {
+  .pricing-section {
+    padding: 50px 20px;
+  }
+
+  .pricing-plan {
     gap: 20px;
   }
 
   .plan {
-    width: 90%;
-    margin: 0 auto;
+    width: 280px;
+    padding: 30px;
   }
 
+  .plan h2 {
+    font-size: 1.8rem;
+  }
+
+  .plan .price {
+    font-size: 2.2rem;
+  }
+
+  .plan ul li {
+    font-size: 1rem;
+  }
+
+  .choose-plan-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
   .pricing-section h1 {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
-  .pricing-section p {
-    font-size: 1rem;
-    margin-bottom: 20px;
+  .pricing-plan {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .plan {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .plan h2 {
+    font-size: 1.6rem;
   }
 
   .plan .price {
@@ -111,10 +131,10 @@
   }
 
   .plan ul li {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
-  .plan .btn {
+  .choose-plan-button {
     font-size: 1rem;
     padding: 10px 20px;
   }
@@ -127,10 +147,11 @@
 
   .pricing-section h1 {
     font-size: 1.8rem;
+    margin-bottom: 20px;
   }
 
-  .pricing-plans {
-    gap: 15px;
+  .pricing-plan {
+    gap: 20px;
   }
 
   .plan {
@@ -138,15 +159,19 @@
     padding: 20px;
   }
 
+  .plan h2 {
+    font-size: 1.5rem;
+  }
+
   .plan .price {
     font-size: 1.8rem;
   }
 
   .plan ul li {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
-  .plan .btn {
+  .choose-plan-button {
     font-size: 0.95rem;
     padding: 8px 15px;
   }

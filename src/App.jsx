@@ -22,6 +22,8 @@ import Contact from "./components/Contact";
 import SignForm from "./components/SignForm";
 import FreeAccess from "./components/FreeAccess";
 import CheckoutPage from "./components/CheckoutPage";
+import Confirmation from "./components/Confirmation";
+import Invoice from "./components/Invoice";
 
 function Home() {
   return (
@@ -58,6 +60,8 @@ function App() {
         <Route path="/signup" element={<SignForm />} />
         <Route path="/freeaccess" element={<FreeAccess />} />
         <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/confirmation" element={<Confirmation />} />
+        <Route path="/invoice" element={<Invoice />} />
       </Routes>
     </Router>
   );
