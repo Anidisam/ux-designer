@@ -1,0 +1,168 @@
+/* General Styles for Checkout Page */
+.checkout-page {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.checkout-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.checkout-page h2 {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.checkout-page p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Features List */
+.checkout-page ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.checkout-page ul li {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Form Styling */
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Confirm Button Styling */
+.confirm-button {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.confirm-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles for Mobile and Tablets */
+@media (max-width: 768px) {
+  .checkout-page {
+    padding: 20px;
+  }
+
+  .checkout-page h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .checkout-page h2 {
+    font-size: 1.6rem;
+  }
+
+  .checkout-page ul {
+    text-align: center;
+  }
+
+  form {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  form label {
+    font-size: 1rem;
+  }
+
+  form input {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .confirm-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+/* Additional Styling for Small Screens (Mobile) */
+@media (max-width: 480px) {
+  .checkout-page {
+    padding: 15px;
+  }
+
+  .checkout-page h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .checkout-page h2 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+  }
+
+  .checkout-page p {
+    font-size: 1rem;
+  }
+
+  form {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  form label {
+    font-size: 0.95rem;
+  }
+
+  form input {
+    padding: 8px;
+    font-size: 0.95rem;
+  }
+
+  .confirm-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}

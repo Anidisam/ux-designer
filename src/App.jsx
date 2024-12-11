@@ -21,6 +21,7 @@ import ToolsAndResources from "./components/ToolsAndResources";
 import Contact from "./components/Contact";
 import SignForm from "./components/SignForm";
 import FreeAccess from "./components/FreeAccess";
+import CheckoutPage from "./components/CheckoutPage";
 
 function Home() {
   return (
@@ -56,6 +57,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={<SignForm />} />
         <Route path="/freeaccess" element={<FreeAccess />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
       </Routes>
     </Router>
   );
