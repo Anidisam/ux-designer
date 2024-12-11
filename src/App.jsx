@@ -28,7 +28,7 @@ function Home() {
       <Hero />
       <Prototyping />
       <Teaching />
-      <Idea />git add .
+      <Idea />
       <Friends />
       <LatestArticles />
       <Footer />

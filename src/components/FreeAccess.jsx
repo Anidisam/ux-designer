@@ -1,17 +1,22 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // Import the useNavigate hook
 import "../assets/css/freeaccess.css";
 
 const FreeAccess = () => {
+  const navigate = useNavigate(); // Initialize the useNavigate hook
+
   return (
     <div className="freeaccess-container">
       <h1>Welcome to Free Access</h1>
       <p>Explore the resources below to start your UI/UX journey:</p>
-      
+
       <div className="resources">
         {/* Free UI/UX Tutorials */}
         <div className="resource-box">
           <h2>Free UI/UX Tutorials</h2>
-          <p>Learn the basics of UI/UX design through step-by-step tutorials.</p>
+          <p>
+            Learn the basics of UI/UX design through step-by-step tutorials.
+          </p>
           <a
             href="https://www.youtube.com/results?search_query=free+ui+ux+tutorials"
             target="_blank"
@@ -39,7 +44,9 @@ const FreeAccess = () => {
         {/* Beginner Guides */}
         <div className="resource-box">
           <h2>Beginner Guides</h2>
-          <p>Access comprehensive guides to build a strong foundation in design.</p>
+          <p>
+            Access comprehensive guides to build a strong foundation in design.
+          </p>
           <a
             href="https://www.behance.net/"
             target="_blank"
@@ -50,13 +57,13 @@ const FreeAccess = () => {
           </a>
         </div>
       </div>
-      
+
       {/* Upgrade to Premium Button */}
       <div className="upgrade-container">
         <p>Want more features and exclusive resources?</p>
-        <button 
+        <button
           className="upgrade-button"
-          onClick={() => window.location.href = "/pricing"}
+          onClick={() => navigate("/pricing")} // Use navigate to programmatically route
         >
           Upgrade to Premium
         </button>

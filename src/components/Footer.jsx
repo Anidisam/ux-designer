@@ -6,7 +6,6 @@ const Footer = () => {
     <div>
       <footer className="footer navbar navbar-expand-lg navbar-light">
         <div className="container">
-
           <a className="navbar-brand" href="#">
             UI/UX Designer
           </a>
@@ -35,21 +34,40 @@ const Footer = () => {
           </ul>
 
           <div className="social-icons">
-            <a href="https://twitter.com" className="me-2">
+            <a
+              href="https://twitter.com"
+              className="me-2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-twitter"></i>
             </a>
-            <a href="https://facebook.com" className="me-2">
+            <a
+              href="https://facebook.com"
+              className="me-2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-facebook"></i>
             </a>
-            <a href="https://instagram.com" className="me-2">
+            <a
+              href="https://instagram.com"
+              className="me-2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="https://github.com">
+            <a
+              href="https://github.com/Anidisam"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-github"></i>
             </a>
           </div>
         </div>
-        
+
         <div className="footer-bottom text-center">
           <p>
             © Copyright All Rights Reserved |<a href="#"> Privacy Policy </a> |

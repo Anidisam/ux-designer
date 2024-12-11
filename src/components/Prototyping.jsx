@@ -12,7 +12,13 @@ const Prototyping = () => {
           <Col md={6}>
             <div className="prototype-content">
               <h2>Create beautiful layout simply</h2>
-              <Button className="work-btn">See all my work</Button>
+              <a
+                href="https://my-portfolio-as.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="work-btn">See all my work</Button>
+              </a>
             </div>
           </Col>
           <Col md={6} className="text-center">

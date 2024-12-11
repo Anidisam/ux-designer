@@ -9,7 +9,7 @@ const Teaching = () => {
         <div className="development">
           <h1>
             <b>
-              Start teaching <br />
+              Start learning <br />
               app development
             </b>
           </h1>
@@ -18,7 +18,9 @@ const Teaching = () => {
             variable fonts in Chrome, in particular <br />
             on Microsoft Windows.
           </h3>
-          <a href="#">
+          <a href="https://www.codecademy.com/learn"
+          target="_blank"
+          rel="noopener noreferrer">
             <h2>See More</h2>
           </a>
         </div>
