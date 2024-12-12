@@ -64,10 +64,7 @@ const Confirmation = () => {
 
       {/* Next Steps */}
       <div className="next-steps">
-        <button
-          className="cta-button"
-          onClick={() => (window.location.href = "/")}
-        >
+        <button className="cta-button" onClick={() => navigate("/")}>
           Go Back Home
         </button>
         <button
