@@ -25,6 +25,7 @@ import CheckoutPage from "./components/CheckoutPage";
 import Confirmation from "./components/Confirmation";
 import Invoice from "./components/Invoice";
 
+
 function Home() {
   return (
     <>
