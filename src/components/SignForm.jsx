@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom";
+import { Modal, Button } from "react-bootstrap"; // Import Modal and Button from React Bootstrap
 import "../assets/css/signform.css";
 
 const SignForm = () => {
   const [loading, setLoading] = useState(false);
-  const navigate = useNavigate(); // Initialize the navigation function
+  const [showTerms, setShowTerms] = useState(false); // State for showing the modal
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -12,9 +14,13 @@ const SignForm = () => {
     setTimeout(() => {
       alert("Sign-up successful! Welcome to the community.");
       setLoading(false);
-      navigate("/freeaccess"); // Redirect to FreeAccess page
-    }, 5000); // Simulate a 5-second loading spinner
+      navigate("/freeaccess");
+    }, 5000);
   };
+
+  // Handlers for the Terms and Conditions modal
+  const handleShowTerms = () => setShowTerms(true);
+  const handleCloseTerms = () => setShowTerms(false);
 
   return (
     <div className="signup-container">
@@ -27,12 +33,40 @@ const SignForm = () => {
         <input type="url" placeholder="Portfolio URL (Optional)" />
         <label>
           <input type="checkbox" required /> I agree to the{" "}
-          <a href="#">Terms and Conditions</a>.
+          <a href="#" onClick={handleShowTerms}>
+            Terms and Conditions
+          </a>.
         </label>
         <button type="submit">
           {loading ? <span className="spinner"></span> : "Sign Up"}
         </button>
       </form>
+
+      {/* Terms and Conditions Modal */}
+      <Modal show={showTerms} onHide={handleCloseTerms}>
+        <Modal.Header closeButton>
+          <Modal.Title>Terms and Conditions</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h5>Welcome to Join for Free!</h5>
+          <p>
+            By signing up, you agree to abide by our Terms and Conditions. These include:
+          </p>
+          <ul>
+            <li>Providing accurate and up-to-date information.</li>
+            <li>Respecting the community guidelines and other members.</li>
+            <li>Not engaging in fraudulent or unethical behavior.</li>
+          </ul>
+          <p>
+            For further details, please reach out to support or refer to our website policies.
+          </p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleCloseTerms}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 };
